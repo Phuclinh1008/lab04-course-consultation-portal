@@ -1,0 +1,11 @@
+{
+    "name": "student/lab04-course-consultation-portal",
+    "autoload": {
+        "psr-4": {
+            "App\\": "app/"
+        },
+        "files": [
+            "app/Support/helpers.php"
+        ]
+    }
+}
