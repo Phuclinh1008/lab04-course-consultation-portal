@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Mini Course Consultation Portal
 
 Lab04 - PHP Secure Forms, PRG, Anti-spam & Session Login Flow
@@ -39,3 +40,6 @@ php -S localhost:8000 -t public
 Open:
 
 http://localhost:8000
+=======
+# lab04-course-consultation-portal
+>>>>>>> 8542a643bd717a66b5fd97317d4d45ab6e4ff3e1

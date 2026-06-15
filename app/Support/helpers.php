@@ -112,7 +112,7 @@ function require_login(): void
 
 function check_session_timeout(): void
 {
-    $idleLimit = 15 * 60;
+    $idleLimit = 20; // Demo timeout 20 giây
 
     if (!isset($_SESSION['user_id'])) {
         return;
@@ -126,13 +126,11 @@ function check_session_timeout(): void
         time() - $last > $idleLimit
     ) {
 
-        logout_clean();
-
-        session_start();
+        $_SESSION = [];
 
         flash_set(
             'error',
-            'Session expired. Please login again.'
+            'Your session has expired due to inactivity. Please login again.'
         );
 
         redirect('/login');
